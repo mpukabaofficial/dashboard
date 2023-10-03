@@ -2,8 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './SideBar.css'
 
-function SideBar() {
+/*function SideBar() {
   const [count, setCount] = useState(0)
   const [name, setName] = useState("")
   const names = ["Lelo", "Jackson", "Luis", "Jessie", "Joey"]
@@ -22,6 +23,9 @@ function SideBar() {
       </ul>
     </>
   )
+}*/
+function show() {
+  document.getElementById('sidebar').classList.toggle('active');
 }
-
+show();
 export default SideBar
