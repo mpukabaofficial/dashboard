@@ -28,4 +28,7 @@ function show() {
   document.getElementById('sidebar').classList.toggle('active');
 }
 show();
+<>
+    <SideBar></SideBar>
+    </>
 export default SideBar
