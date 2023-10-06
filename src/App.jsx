@@ -11,7 +11,11 @@ function App() {
 
   return (
     <>
+<<<<<<< Updated upstream
    <LoginPage/>
+=======
+      
+>>>>>>> Stashed changes
     </>
   )
 }
