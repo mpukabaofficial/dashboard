@@ -23,9 +23,12 @@ function App() {
 
   return (
     <>
+
       <TopBar></TopBar>
           <SideBar></SideBar>
       <Carrousel />
+     <LoginPage/>
+
     </>
   );
 }
