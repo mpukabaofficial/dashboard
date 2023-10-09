@@ -1,6 +1,4 @@
-
-.title
-{
+.title {
   color: red;
 }
 /* Add a black background color to the top navigation */
@@ -31,17 +29,18 @@
   color: rgb(255, 255, 255);
 }
 
-a:active, a:focus {
+a:active,
+a:focus {
   outline: 0;
   border: none;
   -moz-outline-style: none;
-
-.title{
-  color: red;
-
 }
 
-.signin{
+.title {
+  color: red;
+}
+
+.signin {
   float: right;
   background-color: black;
   font-size: 32px;
