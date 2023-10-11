@@ -1,19 +1,10 @@
-
 import "./App.css";
-import SideBar from "./components/SideBar";
-import TopBar from "./TopBar";
-
-import Carrousel from "./components/Carrousel";
+import Layout from "./Layout";
 
 function App() {
   return (
     <>
-
-      <TopBar></TopBar>
-
-      <SideBar></SideBar>
-      <Carrousel />
-
+      <Layout></Layout>
     </>
   );
 }
