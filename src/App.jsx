@@ -4,6 +4,7 @@ import SideBar from "./components/SideBar";
 import TopBar from "./TopBar";
 
 import Carrousel from "./components/Carrousel";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
       <SideBar></SideBar>
       <Carrousel />
+      <LoginPage/>
 
     </>
   );
