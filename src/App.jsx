@@ -1,21 +1,10 @@
-
 import "./App.css";
-import SideBar from "./components/SideBar";
-import TopBar from "./TopBar";
-
-import Carrousel from "./components/Carrousel";
-import LoginPage from "./pages/LoginPage";
+import Layout from "./Layout";
 
 function App() {
   return (
     <>
-
-      <TopBar></TopBar>
-
-      <SideBar></SideBar>
-      <Carrousel />
-      <LoginPage/>
-
+      <Layout></Layout>
     </>
   );
 }

@@ -7,9 +7,10 @@
 }
 .carousel {
   display: flex;
-  width: 20vw;
+  width: 100%;
   position: relative;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 .slide {
   width: 100%;
@@ -21,8 +22,8 @@
 }
 
 .slide-controller {
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  bottom: 16px;
   background-color: black;
   padding: 16px 32px;
   color: white;
