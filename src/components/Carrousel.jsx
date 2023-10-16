@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Carousel.css";
 
 const Carrousel = () => {
@@ -93,10 +98,10 @@ const Carrousel = () => {
         </div>
       </div>
       <button className="left-click slide-controller" onClick={handlePrev}>
-        left
+        <FontAwesomeIcon icon={faChevronLeft} color="white" />
       </button>
       <button className="right-click slide-controller" onClick={handleNext}>
-        right
+        <FontAwesomeIcon icon={faChevronRight} color="white" />
       </button>
       <div className="slider-buttons">
         {carrouselData.map((box, index) => (

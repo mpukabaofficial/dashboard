@@ -7,15 +7,14 @@ import TopBar from "./TopBar";
 const Layout = () => {
   return (
     <div className="container">
-      <div className="Navbar-container">
-        <Sidebar />
-      </div>
+      <Sidebar />
+
       <div className="main">
         <div className="header">
           <TopBar />
         </div>
         <div>
-          <div className="schedule">
+          <div className="carousel-container">
             <Carrousel />
           </div>
         </div>

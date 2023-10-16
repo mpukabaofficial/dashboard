@@ -33,7 +33,6 @@
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  border: 1px solid white;
 }
 .left-click {
   left: 16px;
