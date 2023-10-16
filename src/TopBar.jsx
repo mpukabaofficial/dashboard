@@ -10,10 +10,9 @@ function TopBar() {
       <div class="topnav">
       <a href=''><img src="https://hornethq.kzoo.edu/Student/K-Images/HornetHQ5.svg" alt="Hornet HQ" width="300" height="80"/></a>
       <div className='TopBar'>
-      <a href="">Sign In</a>
+      <a>Profile</a>
+      <a>Sign Out</a>
       </div>
-      
-
       </div> 
     </>
   )
