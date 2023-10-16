@@ -6,7 +6,7 @@ import Layout from "./Layout";
 function App() {
   return (
     <>
-      <Carrousel></Carrousel>
+      <Layout />
     </>
   );
 }

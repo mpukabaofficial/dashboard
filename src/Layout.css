@@ -4,8 +4,8 @@
   color: white;
   height: 100vh;
 }
-.Navbar {
-  background: #000;
+.Navbar-container {
+  background: #333333;
 }
 .main {
   background: dodgerblue;
@@ -13,16 +13,14 @@
   grid-template-rows: 1fr 9fr;
 }
 .header {
-  background: orange;
+  background: #333333;
 }
 .schedule {
   width: 50vw;
-  height: 40vh;
   background: yellow;
-  color: #000;
   margin: auto;
 }
-.carousel {
+.carousel-container {
   width: 100%;
   height: 20vh;
   background: red;

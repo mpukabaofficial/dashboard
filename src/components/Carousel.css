@@ -9,8 +9,9 @@
   display: flex;
   width: 100%;
   position: relative;
-  aspect-ratio: 16 / 9;
   overflow: hidden;
+  height: 100%;
+  aspect-ratio: 16/9;
 }
 .slide {
   width: 100%;
