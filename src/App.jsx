@@ -4,7 +4,7 @@ import Carrousel from "./components/Carrousel";
 function App() {
   return (
     <>
-      <Carrousel></Carrousel>
+     <Sidebar></Sidebar>
     </>
   );
 }
