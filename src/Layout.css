@@ -19,5 +19,10 @@
 .carousel-container {
   width: 50vw;
   background: yellow;
+}
+.calendar-carousel {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
   margin: 16px;
+  gap: 16px;
 }
