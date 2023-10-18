@@ -9,7 +9,7 @@ import "./Carousel.css";
 const Carrousel = () => {
   const carrouselData = [
     {
-      title: "Title 1",
+      title: "Intro to Sleeping",
       info: "some information",
       prof: "Dr Jackson",
       offerings: ["Winter", "Fall"],
@@ -17,15 +17,15 @@ const Carrousel = () => {
         "https://images.pexels.com/photos/18379232/pexels-photo-18379232/free-photo-of-wheat-on-a-field-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
     },
     {
-      title: "Title 2",
-      info: "some information",
+      title: "Underwater Basket Weaving 101",
+      info: "Dive deep (literally!) into the world of crafting. Learn the delicate art of weaving baskets while holding your breath. Bonus points for adding decorative fish. Snorkels and flippers not provided.",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring"],
       picUrl:
         "https://images.pexels.com/photos/17728880/pexels-photo-17728880/free-photo-of-landscape-water-field-summer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-      title: "Title 3",
+      title: "Alien Communication for Earthlings",
       info: "some information",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring"],
@@ -33,7 +33,7 @@ const Carrousel = () => {
         "https://images.pexels.com/photos/18260982/pexels-photo-18260982/free-photo-of-boys-riding-bicycles-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-      title: "Title 4",
+      title: "How to Become a Professional Bed Tester",
       info: "some information",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring", "Fall"],
@@ -41,7 +41,7 @@ const Carrousel = () => {
         "https://images.pexels.com/photos/3135371/pexels-photo-3135371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-      title: "Title 5",
+      title: "The Science of Spaghetti Splatter Dynamics",
       info: "some information",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring"],

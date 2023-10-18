@@ -65,7 +65,7 @@
 .slider-buttons {
   position: absolute;
   bottom: 32px;
-  left: 50%;
+  left: 45%;
   display: flex;
   gap: 16px;
 }
@@ -79,4 +79,7 @@
 }
 .selected {
   background: white;
+}
+.info-container h1 {
+  font-size: 56px;
 }
