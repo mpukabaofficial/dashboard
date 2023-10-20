@@ -13,7 +13,7 @@ function LoginPage() {
   return (
     <>
     <h1 className='Hornet-Title'> Welcome to Hornet HQ</h1>
-    <div className='container'>
+    <div className='container2'>
     <form>
       <div className='form-input'>
       <label>
