@@ -1,30 +1,28 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 9fr;
   color: white;
-  height: 100vh;
+  width: 100%;
+  display: flex;
+  height: 100%;
 }
-.Navbar {
-  background: #000;
+.Navbar-container {
+  background: #333333;
 }
 .main {
-  background: dodgerblue;
   display: grid;
   grid-template-rows: 1fr 9fr;
+  width: 100%;
 }
 .header {
-  background: orange;
-}
-.schedule {
-  width: 50vw;
-  height: 40vh;
-  background: yellow;
-  color: #000;
-  margin: auto;
-}
-.carousel {
+  background: #333333;
   width: 100%;
-  height: 20vh;
-  background: red;
-  border: 1px solid red;
+}
+.carousel-container {
+  width: 50vw;
+  background: yellow;
+}
+.calendar-carousel {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  margin: 16px;
+  gap: 16px;
 }
