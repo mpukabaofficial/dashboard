@@ -33,7 +33,7 @@
     font-size: 20px;
 }
 
-body {
+.bodyjank {
     height: 100vh;
     background: linear-gradient(#f76b20, #eabf75);
 }
