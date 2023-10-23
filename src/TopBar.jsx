@@ -16,6 +16,7 @@ function TopBar() {
           <a><FontAwesomeIcon icon={faUser} style={{color: "#ff8000",}} /> Profile</a>
           <a><FontAwesomeIcon icon={faRightFromBracket} style={{color: "#ff8040",}} /> Sign Out</a>
         </div>
+        <div className="white-box-topbar"></div>
       </div> 
     </>
   )
