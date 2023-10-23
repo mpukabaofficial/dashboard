@@ -19,6 +19,8 @@
 .carousel-container {
   width: 50vw;
   background: yellow;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
 }
 .calendar-carousel {
   display: grid;
