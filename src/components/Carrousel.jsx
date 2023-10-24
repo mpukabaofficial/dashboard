@@ -10,7 +10,7 @@ const Carrousel = () => {
   const carrouselData = [
     {
       title: "Intro to Sleeping",
-      info: "some information",
+      info: "/",
       prof: "Dr Jackson",
       offerings: ["Winter", "Fall"],
       picUrl:
@@ -18,7 +18,7 @@ const Carrousel = () => {
     },
     {
       title: "Underwater Basket Weaving 101",
-      info: "Dive deep (literally!) into the world of crafting. Learn the delicate art of weaving baskets while holding your breath. Bonus points for adding decorative fish. Snorkels and flippers not provided.",
+      info: "/",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring"],
       picUrl:
@@ -26,7 +26,7 @@ const Carrousel = () => {
     },
     {
       title: "Alien Communication for Earthlings",
-      info: "some information",
+      info: "/",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring"],
       picUrl:
@@ -34,7 +34,7 @@ const Carrousel = () => {
     },
     {
       title: "How to Become a Professional Bed Tester",
-      info: "some information",
+      info: "/",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring", "Fall"],
       picUrl:
@@ -42,7 +42,7 @@ const Carrousel = () => {
     },
     {
       title: "The Science of Spaghetti Splatter Dynamics",
-      info: "some information",
+      info: "/",
       prof: "Dr Jackson",
       offerings: ["Winter", "Spring"],
       picUrl:
@@ -81,27 +81,31 @@ const Carrousel = () => {
   return (
     <div className="carousel">
       <div className="slide">
-        <img
-          src={carrouselData[currentSlide].picUrl}
-          alt=""
-          className="carrousel-image"
-        />
+        <div className="image-holder">
+          <img
+            src={carrouselData[currentSlide].picUrl}
+            alt=""
+            className="carrousel-image"
+          />
+        </div>
         <div className="info-container">
           <h1 className="carousel-top">{carrouselData[currentSlide].title}</h1>
-          <h2 className="carousel-top">{carrouselData[currentSlide].info}</h2>
           <h3 className="carousel-top">{carrouselData[currentSlide].prof}</h3>
           <ul className="carousel-top">
             {carrouselData[currentSlide].offerings.map((offering) => (
               <li key={offering}>{offering}</li>
             ))}
           </ul>
+          <a href={carrouselData[currentSlide].info} className="carousel-top">
+            Learn more
+          </a>
         </div>
       </div>
       <button className="left-click slide-controller" onClick={handlePrev}>
         <FontAwesomeIcon icon={faChevronLeft} color="white" />
       </button>
       <button className="right-click slide-controller" onClick={handleNext}>
-        <FontAwesomeIcon icon={faChevronRight} color="white" />
+        <FontAwesomeIcon icon={faChevronRight} color="black" />
       </button>
       <div className="slider-buttons">
         {carrouselData.map((box, index) => (
