@@ -1,5 +1,6 @@
-import React from "react";
 import "./Calendar.css";
+import React from "react";
+import Clock from "../Clock/Clock";
 
 const Calendar = () => {
   // You can add your schedule data here
@@ -22,7 +23,9 @@ const Calendar = () => {
   return (
     <div className="calendar">
       <div className="calendar-header">
-        <h1>Daily Schedule</h1>
+        <div>
+          <Clock />
+        </div>
       </div>
       <div className="calendar-body">
         <div className="schedule-column">

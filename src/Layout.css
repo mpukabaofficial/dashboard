@@ -1,3 +1,8 @@
+:root {
+  --shadow-webkit: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+  --shadow-moz: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+  --shadow-standard: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+}
 .container {
   color: white;
   width: 100%;
@@ -11,6 +16,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
 }
 .header {
   background: #333333;
@@ -21,9 +27,9 @@
   aspect-ratio: 16 / 9;
   height: 100%;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: var(--shadow-webkit);
+  -moz-box-shadow: var(--shadow-moz);
+  box-shadow: var(--shadow-standard);
 }
 .calendar-carousel {
   display: grid;
