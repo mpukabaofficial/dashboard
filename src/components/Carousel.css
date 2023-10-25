@@ -16,6 +16,7 @@
   position: relative;
   aspect-ratio: 16/9;
   height: 100%;
+  z-index: 2;
 }
 .slide {
   width: 100%;

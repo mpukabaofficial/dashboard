@@ -1,3 +1,4 @@
+
 :root {
   --shadow-webkit: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
   --shadow-moz: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
@@ -9,6 +10,7 @@
   height: 100%;
   background: #f0f0f0;
 }
+
 .Navbar-container {
   background: #333333;
 }
@@ -57,4 +59,17 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+/* Styles for the white box overlay */
+.white-box {
+  color: white;
+  position: absolute;
+  top: 200;
+  left: -1;
+  width: 97.6%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  background: rgb(179,111,35);
+  background: linear-gradient(90deg, rgba(179,111,35,1) 5%, rgba(147,75,11,1) 52%, rgba(91,38,10,1) 88%);
+  z-index: 1;
+  
 }
