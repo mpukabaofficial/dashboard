@@ -53,3 +53,8 @@
 .calendar {
   height: 100%;
 }
+.cal-search {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
