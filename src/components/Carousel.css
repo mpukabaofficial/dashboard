@@ -117,4 +117,5 @@ a.carousel-top {
   padding: 8px 16px;
   border-radius: 32px;
   border: none;
+  cursor: pointer;
 }

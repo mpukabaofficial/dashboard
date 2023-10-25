@@ -6,6 +6,7 @@ import TopBar from "./TopBar";
 import Calendar from "./components/Calendar/Calendar";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import BillingCalculator from "./components/Billing/BillingCalculator";
+import Search from "./components/Search/Search";
 
 const Layout = () => {
   return (
@@ -32,8 +33,13 @@ const Layout = () => {
               </div>
             </div>
           </div>
-          <div className="calendar section-bg section-padding">
-            <Calendar />
+          <div className="cal-search">
+            <div className="search">
+              <Search />
+            </div>
+            <div className="calendar section-bg section-padding">
+              <Calendar />
+            </div>
           </div>
         </div>
       </div>
