@@ -5,6 +5,7 @@ import Sidebar from "./components/SideBar";
 import TopBar from "./TopBar";
 import Calendar from "./components/Calendar/Calendar";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
+import BillingCalculator from "./components/Billing/BillingCalculator";
 
 const Layout = () => {
   return (
@@ -14,20 +15,25 @@ const Layout = () => {
         <div className="header">
           <TopBar />
         </div>
-        <div className="calendar-carousel">
-          <div className="carousel-container">
-            <Carrousel />
+        <div className="body">
+          <div className="carousel-prog-bill">
+            <div className="carousel-container section-bg">
+              <Carrousel />
+            </div>
+            <div className="bill-prog">
+              <div className="progress section-bg section-padding">
+                <h2>Progress</h2>
+                <ProgressBar bgcolor="#8957E5" completed={20} title="Major" />
+                <ProgressBar bgcolor="#F6781D" completed={90} title="Minor" />
+              </div>
+              <div className="section-bg section-padding">
+                <h2>Billing</h2>
+                <BillingCalculator />
+              </div>
+            </div>
           </div>
-          <div className="calendar">
+          <div className="calendar section-bg section-padding">
             <Calendar />
-          </div>
-        </div>
-        <div className="bill-prog">
-          <div>
-            <ProgressBar bgcolor="#000" completed={20} title="Major" />
-          </div>
-          <div>
-            <h2>Billing</h2>
           </div>
         </div>
       </div>

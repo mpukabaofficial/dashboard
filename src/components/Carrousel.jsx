@@ -116,6 +116,7 @@ const Carrousel = () => {
           ></button>
         ))}
       </div>
+      <button className="add">Quick add</button>
     </div>
   );
 };

@@ -3,10 +3,10 @@ const ProgressBar = (props) => {
 
   const containerStyles = {
     height: 20,
-    width: "80%",
+    width: "95%",
     backgroundColor: "#e0e0de",
     borderRadius: 50,
-    margin: 50,
+    margin: 10,
   };
 
   const fillerStyles = {
@@ -25,7 +25,7 @@ const ProgressBar = (props) => {
 
   return (
     <div>
-      <h3>{title}</h3>
+      <h3>{!title ? "Enter title" : title}</h3>
       <div style={containerStyles}>
         <div style={fillerStyles}>
           <span style={labelStyles}>{`${

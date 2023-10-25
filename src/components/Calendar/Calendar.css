@@ -44,8 +44,6 @@ input:focus {
   border-bottom: 2px solid var(--secondary-color);
 }
 .calendar {
-  max-height: 540px;
-  height: 100%;
   overflow: scroll;
   position: relative;
 }
