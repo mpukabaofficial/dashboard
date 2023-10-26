@@ -10,25 +10,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faDollarSign, faHouse, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   const toggleSidebar = () => {
     setIsActive(!isActive);
   };
 
+  const arraySidebar = [
+    {
+      name: "Billing",
+      icons: faDollarSign,
+      link: "/",
+    },
+    {
+      name: "Home",
+      icons: faHouse,
+      link: "/",
+    },
+    {
+      name: "News",
+      icons: faNewspaper,
+      link: "/",
+    },
+  ];
   return (
     <div id="sidebar" className={isActive ? 'active' : ''}>
      <div className="toggle-btn" onClick={toggleSidebar}>
         <FontAwesomeIcon icon={faBars} />
-        </div>
         <ul>
-          <li><a href=''><img src={homebutton} alt="homebutton" /></a></li>
-          <li><a href=''><img src={finnancialbutton} alt="finanncialbutton" /></a></li>
-          <li><a href=''><img src={employmentbutton} alt="employmentbutton" /></a></li>
-          <li><a href=''><img src={academicsbutton} alt="academicsbutton" /></a></li>
-          <li><a href=''><img src={useroptionsbutton} alt="useroptionsbutton" /></a></li>
-        
+          {arraySidebar.map((item, index) => (
+            <li key={index}>
+              <a href={item.link}>
+              <FontAwesomeIcon icon={item.icons} />
+                {isActive ? item.name : ""}</a></li>
+          ))}
         </ul>
+      </div>
       </div>
     
   );
