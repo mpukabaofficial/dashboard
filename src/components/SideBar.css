@@ -4,13 +4,11 @@
 }
 
 body {
-  font-family: Source Sans Pro;
+  font-family: Arial;
 }
 
 #sidebar {
-  /* position: absolute; */
-  width: 45px;
-  
+  width: 50px;
   height: 1000px;
   background: #464646;
   left: -300px;
@@ -26,18 +24,39 @@ body {
   list-style: none;
   color: #fff;
   font-size: 20px;
-  /*padding: 20px 24px;*/
-}
-#sidebar .toggle-btn {
-  /* position: absolute; */
-  top: 30px;
-  left: 330px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
 }
 
-.toggle-btn span {
-  width: 45px;
-  height: 4px;
-  background: #000;
-  display: block;
-  margin-top: 4px;
+#sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 10px; 
+  transition: margin-left 0.4s; 
+}
+
+#sidebar ul li a .fa-icon {
+  margin-right: 100px; 
+}
+
+#sidebar ul li a i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+#sidebar .toggle-btn {
+  position: relative;
+  top: 30px;
+  left: 15px;
+  color: white;
 }
