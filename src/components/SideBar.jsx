@@ -38,7 +38,7 @@ const Sidebar = () => {
       link: "/",
     },
     {
-      name: "Settings",
+      name: "User Options",
       icons: faGear,
       link: "/",
     },

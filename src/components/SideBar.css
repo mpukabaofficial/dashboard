@@ -12,12 +12,12 @@ body {
   height: 1000px;
   background: #464646;
   left: -300px;
-  transition: 0.4s;
+  transition: .7s;
 }
 
 #sidebar.active {
   left: 0;
-  width: 257px;
+  width: 10%;
 }
 
 #sidebar ul li {
@@ -42,21 +42,16 @@ body {
   justify-content: flex-start;
   text-align: left;
   margin: 0 10px; 
-  transition: margin-left 0.4s; 
+  transition: margin-left .7s; 
 }
 
-#sidebar ul li a .fa-icon {
-  margin-right: 100px; 
-}
-
-#sidebar ul li a i {
-  margin-right: 10px;
-  margin-left: 0;
+#sidebar ul li a:hover {
+  color: #a7a3a3;
 }
 
 #sidebar .toggle-btn {
   position: relative;
-  top: 30px;
+  top: 15px;
   left: 15px;
   color: white;
 }
