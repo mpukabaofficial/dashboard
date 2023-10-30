@@ -1,13 +1,22 @@
-import React, {useState, useEffect} from 'react'
-import bars from '../assets/bars-solid.svg'
-import './Sidebar.css'; 
-import homebutton from '../assets/homebutton.png';
-import finnancialbutton from '../assets/FinanncialInfo.png'
-import employmentbutton from '../assets/employment.png'
-import  academicsbutton from '../assets/academics.png'
-import useroptionsbutton from '../assets/useroptions.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faDollarSign, faGear, faGraduationCap, faHouse, faMoneyBillTrendUp, faNewspaper, faUser } from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useEffect } from "react";
+import bars from "../assets/bars-solid.svg";
+import "./Sidebar.css";
+import homebutton from "../assets/homebutton.png";
+import finnancialbutton from "../assets/FinanncialInfo.png";
+import employmentbutton from "../assets/employment.png";
+import academicsbutton from "../assets/academics.png";
+import useroptionsbutton from "../assets/useroptions.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faDollarSign,
+  faGear,
+  faGraduationCap,
+  faHouse,
+  faMoneyBillTrendUp,
+  faNewspaper,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -15,7 +24,7 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setIsActive(!isActive);
   };
-  
+
   const arraySidebar = [
     {
       name: "Home",
@@ -42,23 +51,28 @@ const Sidebar = () => {
       icons: faGear,
       link: "/",
     },
-    
   ];
   return (
-    <div id="sidebar" className={isActive ? 'active' : ''}>
+    <div id="sidebar" className={isActive ? "active" : ""}>
       <div className="toggle-btn" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={faBars} style={{ fontSize: '24px' }} />
+        <FontAwesomeIcon icon={faBars} style={{ fontSize: "24px" }} />
       </div>
       <ul>
         {arraySidebar.map((item, index) => (
           <li key={index}>
             <a
               href={item.link}
-              style={{
-                marginLeft: isActive ? '0' : '-100px', 
-              }}
+              style={
+                {
+                  // marginLeft: isActive ? "0" : "-100px",
+                }
+              }
             >
-              <FontAwesomeIcon icon={item.icons} className="fa-icon"style={{ marginRight: '10px' }} />
+              <FontAwesomeIcon
+                icon={item.icons}
+                className="fa-icon"
+                style={{ marginRight: "10px" }}
+              />
               {isActive && item.name}
             </a>
           </li>
