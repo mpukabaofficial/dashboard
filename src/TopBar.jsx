@@ -5,6 +5,9 @@ import "./App.css";
 import "./TopBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import CartDrop from "./CartDrop";
+import {Link} from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
 
 function TopBar() {
   return (
@@ -28,6 +31,7 @@ function TopBar() {
           />{" "}
           Sign Out
         </a>
+        <a className="TopBar"><CartDrop></CartDrop></a>
       </div>
     </>
   );

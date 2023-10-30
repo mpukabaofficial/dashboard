@@ -5,6 +5,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Carousel.css";
+import ClassList from "../CartDrop.jsx";
 
 const Carrousel = () => {
   const carrouselData = [
