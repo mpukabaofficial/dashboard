@@ -10,7 +10,7 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setIsActive(!isActive);
   };
-  
+
   const arraySidebar = [
     {
       name: "Home",
@@ -37,12 +37,11 @@ const Sidebar = () => {
       icons: faGear,
       link: "/",
     },
-    
   ];
   return (
-    <div id="sidebar" className={isActive ? 'active' : ''}>
+    <div id="sidebar" className={isActive ? "active" : ""}>
       <div className="toggle-btn" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={faBars} style={{ fontSize: '24px' }} />
+        <FontAwesomeIcon icon={faBars} style={{ fontSize: "24px" }} />
       </div>
       <ul>
         {arraySidebar.map((item, index) => (
@@ -50,10 +49,15 @@ const Sidebar = () => {
             <a
               href={item.link}
               style={{
-                // marginLeft: isActive ? '0' : '-100px', 
+                 marginLeft: isActive ? '0' : '-100px', 
               }}
+
             >
-              <FontAwesomeIcon icon={item.icons} className="fa-icon"style={{ marginRight: '10px' }} />
+              <FontAwesomeIcon
+                icon={item.icons}
+                className="fa-icon"
+                style={{ marginRight: "10px" }}
+              />
               {isActive && item.name}
             </a>
           </li>
