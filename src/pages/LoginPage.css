@@ -35,6 +35,13 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(#f76b20, #eabf75);
+    background-image:url(/src/beehive.png) ,  linear-gradient(#f76b20, #eabf75);
+    
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
