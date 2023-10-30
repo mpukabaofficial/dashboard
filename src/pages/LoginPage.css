@@ -33,7 +33,7 @@
     font-size: 20px;
 }
 
-body {
+.bodyjank {
     height: 100vh;
     background-image:url(/src/beehive.png) ,  linear-gradient(#f76b20, #eabf75);
     

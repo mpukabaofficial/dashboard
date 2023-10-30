@@ -1,28 +1,64 @@
+
+:root {
+  --shadow-webkit: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+  --shadow-moz: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+  --shadow-standard: 0px 0px 42px -2px rgba(0, 0, 0, 0.24);
+}
 .container {
-  color: white;
   width: 100%;
   display: flex;
   height: 100%;
+  background: linear-gradient(90deg, rgba(179,111,35,1) 5%, rgba(147,75,11,1) 52%, rgba(91,38,10,1) 88%);
 }
+
 .Navbar-container {
   background: #333333;
 }
 .main {
-  display: grid;
-  grid-template-rows: 1fr 9fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  min-height: 100vh; 
 }
 .header {
   background: #333333;
   width: 100%;
 }
-.carousel-container {
-  width: 50vw;
-  background: yellow;
-}
-.calendar-carousel {
+.body {
   display: grid;
-  grid-template-columns: 6fr 5fr;
-  margin: 16px;
-  gap: 16px;
+  grid-template-columns: 5fr 3fr;
+  gap: 32px;
+  margin: 32px;
 }
+.carousel-prog-bill {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.bill-prog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+}
+.section-bg {
+  background: white;
+}
+.section-padding {
+  padding: 16px;
+}
+.carousel-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.calendar {
+  height: 100%;
+}
+.cal-search {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/* Styles for the white box overlay */
+
