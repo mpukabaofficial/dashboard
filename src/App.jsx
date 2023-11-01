@@ -10,7 +10,9 @@ import LoginPage from "./pages/LoginPage";
 function App() {
   return (
     <>
-      <Courses />
+
+      <LoginPage />
+
     </>
   );
 }
