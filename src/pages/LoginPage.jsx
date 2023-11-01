@@ -1,10 +1,9 @@
-import { useState } from "react";
+
 import "./LoginPage.css";
 
 function LoginPage() {
-  const [count, setCount] = useState(0);
-  const [name, setName] = useState("");
   return (
+
     <div className="page">
       <div className="bodyjank">
         <h1 className="Hornet-Title"> Welcome to Hornet HQ</h1>
@@ -32,9 +31,12 @@ function LoginPage() {
             </div>
           </form>
         </div>
+
       </div>
     </div>
+
   );
+
 }
 
 export default LoginPage;
