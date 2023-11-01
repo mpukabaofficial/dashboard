@@ -12,7 +12,7 @@ body {
   height: 1000px;
   background: #464646;
   left: -300px;
-  transition:  .7s;
+  transition: 0.7s;
 }
 
 #sidebar.active {
@@ -26,7 +26,7 @@ body {
   font-size: 20px;
   padding: 20px 24px;
   cursor: pointer;
-  transition: background-color .7s;
+  transition: background-color 0.7s;
   border-radius: 5px;
   margin: 5px 0;
   display: flex;
@@ -34,15 +34,15 @@ body {
   justify-content: space-between;
 }
 
-#sidebar ul li a { 
+#sidebar ul li a {
   text-decoration: none;
   color: #fff;
   display: flex;
   align-items: left;
   justify-content: flex-start;
   text-align: center;
-  margin: 0 10px; 
-  transition: margin-left .7s; 
+  margin: 0 10px;
+  transition: margin-left 0.7s;
 }
 
 #sidebar ul li a:hover {

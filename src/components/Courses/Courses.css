@@ -1,0 +1,17 @@
+.cards {
+  display: grid;
+  max-width: 1024px;
+  margin: 32px auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  text-align: center;
+  color: white;
+  padding: 32px 64px;
+}
