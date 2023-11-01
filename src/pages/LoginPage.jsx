@@ -1,7 +1,9 @@
+
 import "./LoginPage.css";
 
 function LoginPage() {
   return (
+
     <div className="page">
       <div className="bodyjank">
         <h1 className="Hornet-Title"> Welcome to Hornet HQ</h1>
@@ -29,9 +31,12 @@ function LoginPage() {
             </div>
           </form>
         </div>
+
       </div>
     </div>
+
   );
+
 }
 
 export default LoginPage;
