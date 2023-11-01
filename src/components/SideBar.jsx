@@ -1,8 +1,15 @@
-import React, {useState, useEffect} from 'react'
-import bars from '../assets/bars-solid.svg'
-import './Sidebar.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faDollarSign, faGear, faGraduationCap, faHouse, faMoneyBillTrendUp} from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useEffect } from "react";
+import bars from "../assets/bars-solid.svg";
+import "./Sidebar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faDollarSign,
+  faGear,
+  faGraduationCap,
+  faHouse,
+  faMoneyBillTrendUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -49,9 +56,8 @@ const Sidebar = () => {
             <a
               href={item.link}
               style={{
-                 marginLeft: isActive ? '0' : '-100px', 
+                marginLeft: isActive ? "0" : "-100px",
               }}
-
             >
               <FontAwesomeIcon
                 icon={item.icons}
