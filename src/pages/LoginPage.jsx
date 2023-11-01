@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useState } from "react";
 import "./LoginPage.css";
 
@@ -5,6 +6,11 @@ function LoginPage() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
 
+=======
+import "./LoginPage.css";
+
+function LoginPage() {
+>>>>>>> Stashed changes
   return (
     <div className="page">
       <div className="bodyjank">
