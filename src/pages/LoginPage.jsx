@@ -13,6 +13,7 @@ function LoginPage() {
   return (
 
     <div className='page'>
+      
 
 
     <div className='bodyjank'>
@@ -40,7 +41,7 @@ function LoginPage() {
   </form>
     </div>
     
-
+    </div>
     </div>
 
   )
