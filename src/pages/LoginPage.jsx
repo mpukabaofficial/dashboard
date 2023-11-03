@@ -28,7 +28,10 @@ function LoginPage() {
               <button onClick={() => setName("Forgot Password?")}>
                 Forgot Password?
               </button>
-              <input type="submit" value="Log In" />
+
+              <Link to="/">
+                <input type="submit" value="Log In" />
+              </Link >
             </div>
           </form>
         </div>
