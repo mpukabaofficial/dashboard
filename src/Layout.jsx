@@ -13,7 +13,7 @@ const Layout = () => {
     <div className="container">
       <Sidebar />
       <div className="main">
-      
+
         <div className="header">
           <TopBar />
           <div className="white-box"></div>
