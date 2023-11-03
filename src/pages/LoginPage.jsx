@@ -1,5 +1,6 @@
 
 import "./LoginPage.css";
+import { Link } from 'react-router-dom';
 
 function LoginPage() {
   return (
